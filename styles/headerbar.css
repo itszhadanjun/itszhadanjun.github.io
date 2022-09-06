@@ -1,0 +1,16 @@
+.headerbar {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    border-radius: 7.5px;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.headerbar p {
+    top: 15%;
+    left: 48%;
+    font-size: 25px;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
