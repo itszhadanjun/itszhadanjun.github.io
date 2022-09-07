@@ -1,5 +1,6 @@
 .headerbar {
     width: 100vw;
+    top: 0px;
     height: 70px;
     position: fixed;
     border-radius: 7.5px;
