@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Zhadanjun's Portfolio</title>
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/about.css">
         <link rel="stylesheet" href="./styles/headerbar.css">
         <link rel="stylesheet" href="./styles/objectStyle.css">
         <script src="./scripts/settings.js"></script>
@@ -13,10 +13,19 @@
         <div class="headerbar">
             <p id="title">Zhadanjun's Portfolio</p>
             <div class="button">
-                <button class="btnStyle1" id="mainButton">Main</button>
-                <button class="btnStyle1" id="projButton">Projects</button>
-                <button class="btnStyle1" id="aboutButton">About</button>
+                <a class="btnStyle1" id="mainButton" href="./index.html">Main</a>
+                <a class="btnStyle1" id="projButton" onclick="alert('In development')">Projects</a>
+                <a class="btnStyle1" id="aboutButton" href="./about.html">About</a>
             </div>
+        </div>
+
+        <div class="about">
+            <h2>Social Media</h2>
+            
+            <div class="socialDiv">
+                <a href="https://github.com/itszhadanjun" target="_blank">Github</a>
+            </div>
+            <!--<h4>Click me</h4>-->
         </div>
     </body>
 </html>
