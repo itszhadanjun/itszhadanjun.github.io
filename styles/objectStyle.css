@@ -3,4 +3,10 @@
     width: 100px;
     height: 40px;
     font-size: 15px;
+    border-radius: 5px;
+}
+
+.btnStyle1:hover {
+    background-color: #B4B4B4;
+    transition: all 0.3s ease-in-out;
 }
