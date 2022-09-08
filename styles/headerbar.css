@@ -17,7 +17,7 @@
 
 .button {
     top: 40px;
-    right: -125px;
+    right: -175px;
     position: fixed;
     transform: translate(-50%, -50%);
 }
