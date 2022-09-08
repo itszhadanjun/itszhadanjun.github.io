@@ -15,7 +15,7 @@
     padding-left: 20px;
 }
 
-.button {
+.headerbar .headerButton {
     top: 40px;
     right: -175px;
     position: fixed;
