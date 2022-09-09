@@ -39,16 +39,14 @@
 
 .btnStyle3 {
     background-color: transparent;
-    width: 100px;
-    height: 40px;
     font-size: 16px;
     border-radius: 5px;
     text-decoration: none;
     color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .btnStyle3:hover {
