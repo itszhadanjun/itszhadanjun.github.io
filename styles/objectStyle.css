@@ -54,3 +54,10 @@
 .btnStyle3:hover {
     background-color: #b4b4b4;
 }
+
+footer {
+    right: -75px;
+    bottom: -5px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
