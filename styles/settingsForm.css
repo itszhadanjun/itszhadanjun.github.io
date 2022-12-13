@@ -1,4 +1,27 @@
 .settingsDiv {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: rgba(55, 55, 71, 0.562);
+    width: 100vw;
+    height: 100vh;
+}
+
+.settingsDiv .settingsForm {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    height: 50vh;
+    flex-direction: row;
+}
+
+.settingsDiv .settingsForm .settingsTitle {
+    top: 15px;
+    left: 50%;
     position: fixed;
     transform: translate(-50%, -50%);
 }
