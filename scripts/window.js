@@ -1,5 +1,5 @@
-let settingsDiv = document.getElementById("settingsDiv").style;
+var settingsDiv = document.getElementById('settingsDiv');
 
 function settingsButtonOnPress(){
-    settingsDiv.display = "none";
-}
+    // Do nothing
+};
