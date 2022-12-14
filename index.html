@@ -37,7 +37,7 @@
                 <h3 class="settingsTitle">Settings</h3>
 
                 <label class="settingsLabel1">Theme</label>
-                <select class="settingsSelect">
+                <select class="settingsSelect" id="themeOption">
                     <option value="light">Light Mode</option>
                     <option value="dark">Dark Mode</option>
                 </select>
@@ -50,6 +50,8 @@
 
     <script>
         var settingsDiv = document.getElementById('settingsDiv');
+        var ApplySettingsButton = document.getElementById('ApplySettingsButton');
+        var themeOption = document.getElementById('themeOption');
 
         function displaySettingsDiv() {
             settingsDiv.style.display = 'inline';
@@ -57,6 +59,10 @@
 
         function exitSettingsDiv() {
             settingsDiv.style.display = 'none';
+        }
+
+        function apply() {
+            //
         }
     </script>
 </html>
