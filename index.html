@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="./styles/objectStyle.css">
         <link rel="stylesheet" href="./styles/settingsForm.css">
         <script src="./scripts/settings.js"></script>
-        <script src="./scripts/window.js"></script>
     </head>
 
     <body>
@@ -21,7 +20,7 @@
             <a class="btnStyle1" id="projButton" href="./projects.html">Projects</a>
             <a class="btnStyle1" id="eventButton" onclick="alert('In development')">Event</a>
             <a class="btnStyle1" id="aboutButton" href="./about.html">About</a>
-            <a class="btnStyle1" id="settingButton"><img src="./images/settings.png" width="10px"></a>
+            <a class="btnStyle1" id="settingButton" onclick=displaySettingsDiv()><img src="./images/settings.png" width="10px"></a>
         </div>
 
         <!-- Notification Panel -->
@@ -32,12 +31,32 @@
 
         <!-- Settings Panel -->
         <div class="settingsDiv" id="settingsDiv">
-            <form class="settingsForm">
-                <a class="btnStyle4" id="quitSettingsButton" onclick=settingsButtonOnPress()>Back</a>
+            <form class="settingsForm" style="overflow: scroll;">
+                <a class="btnStyle4" id="quitSettingsButton" onclick=exitSettingsDiv()>Back</a>
+                <a class="btnStyle5" id="ApplySettingsButton" onclick=applySettings()>Apply</a>
                 <h3 class="settingsTitle">Settings</h3>
+
+                <label class="settingsLabel1">Theme</label>
+                <select class="settingsSelect">
+                    <option value="light">Light Mode</option>
+                    <option value="dark">Dark Mode</option>
+                </select>
+                <label class="settingsLabel2">Language</label>
             </form>
         </div>
 
         <footer>Made By Zhadanjun</footer>
     </body>
+
+    <script>
+        var settingsDiv = document.getElementById('settingsDiv');
+
+        function displaySettingsDiv() {
+            settingsDiv.style.display = 'inline';
+        }
+
+        function exitSettingsDiv() {
+            settingsDiv.style.display = 'none';
+        }
+    </script>
 </html>

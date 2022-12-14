@@ -14,6 +14,7 @@
     position: fixed;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
+    border-radius: 5mm;
     width: 50vw;
     height: 50vh;
     flex-direction: row;
@@ -24,4 +25,33 @@
     left: 50%;
     position: fixed;
     transform: translate(-50%, -50%);
+}
+
+.settingsDiv .settingsForm .settingsLabel1 {
+    top: 80px;
+    left: 40px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+.settingsDiv .settingsForm .settingsLabel2 {
+    top: 120px;
+    left: 55px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+.settingsDiv .settingsForm .settingsSelect {
+    top: 80px;
+    right: -10px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.settingsDiv .settingsForm .settingsSelect:hover {
+    background-color: rgb(104, 104, 104);
+    transition: all ease-in-out 0.4s;
 }
