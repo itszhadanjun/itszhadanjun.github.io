@@ -20,7 +20,9 @@
             <a class="btnStyle1" id="projButton" href="./projects.html">Projects</a>
             <a class="btnStyle1" id="eventButton" onclick="alert('In development')">Event</a>
             <a class="btnStyle1" id="aboutButton" href="./about.html">About</a>
-            <a class="btnStyle1" id="settingButton" onclick=displaySettingsDiv()><img src="./images/settings.png" width="10px"></a>
+            <a class="btnStyle1" id="settingButton" onclick=displaySettingsDiv()>
+                <img src="./images/settings.png" width="10px">
+            </a>
         </div>
 
         <!-- Notification Panel -->
@@ -38,11 +40,13 @@
 
                 <label class="settingsLabel1">Theme</label>
                 <select class="settingsSelect" id="themeOption">
-                    <option value="light">Light Mode</option>
-                    <option value="dark">Dark Mode</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
                 </select>
                 <label class="settingsLabel2">Language</label>
             </form>
+
+            <footer>Note: Please accept cookies to save your personal preferences</footer>
         </div>
 
         <footer>Made By Zhadanjun</footer>
@@ -51,7 +55,7 @@
     <script>
         var settingsDiv = document.getElementById('settingsDiv');
         var ApplySettingsButton = document.getElementById('ApplySettingsButton');
-        var themeOption = document.getElementById('themeOption');
+        var themeValue = document.getElementById('themeOption');
 
         function displaySettingsDiv() {
             settingsDiv.style.display = 'inline';
@@ -61,8 +65,10 @@
             settingsDiv.style.display = 'none';
         }
 
-        function apply() {
-            //
+        function applySettings() {
+            for (let i = 0; i < themeValue.length; i++) {
+                let option = themeValue.options[i];
+            }
         }
     </script>
 </html>

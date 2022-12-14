@@ -55,3 +55,11 @@
     background-color: rgb(104, 104, 104);
     transition: all ease-in-out 0.4s;
 }
+
+.settingsDiv footer {
+    bottom: -8px;
+    left: 50vw;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    align-self: center;
+}
