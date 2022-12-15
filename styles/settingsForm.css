@@ -41,7 +41,7 @@
     transform: translate(-50%, -50%);
 }
 
-.settingsDiv .settingsForm .settingsSelect {
+.settingsDiv .settingsForm .settingsSelect1 {
     top: 80px;
     right: -10px;
     position: fixed;
@@ -51,7 +51,22 @@
     border-radius: 4px;
 }
 
-.settingsDiv .settingsForm .settingsSelect:hover {
+.settingsDiv .settingsForm .settingsSelect1:hover {
+    background-color: rgb(104, 104, 104);
+    transition: all ease-in-out 0.4s;
+}
+
+.settingsDiv .settingsForm .settingsSelect2 {
+    top: 120px;
+    right: -65px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.settingsDiv .settingsForm .settingsSelect2:hover {
     background-color: rgb(104, 104, 104);
     transition: all ease-in-out 0.4s;
 }
