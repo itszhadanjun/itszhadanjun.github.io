@@ -40,14 +40,14 @@
 
                 <label class="settingsLabel1">Theme</label>
                 <select class="settingsSelect1" id="themeOption">
-                    <option value="light">Light</option>
-                    <option value="dark">Dark</option>
+                    <option>Light</option>
+                    <option>Dark</option>
                 </select>
                 <label class="settingsLabel2">Language</label>
-                <select class="settingsSelect2" id="themeOption">
-                    <option value="chinese">中文 (Chinese)</option>
-                    <option value="english">English</option>
-                    <option value="english">Bahasa Melayu (Malay)</option>
+                <select class="settingsSelect2" id="languageOption">
+                    <option>中文 (Chinese)</option>
+                    <option>English</option>
+                    <option>Bahasa Melayu (Malay)</option>
                 </select>
             </form>
 
@@ -58,9 +58,13 @@
     </body>
 
     <script>
+        // Element
         var settingsDiv = document.getElementById('settingsDiv');
         var ApplySettingsButton = document.getElementById('ApplySettingsButton');
+
+        // Settings
         var themeValue = document.getElementById('themeOption');
+        var languageValue = document.getElementById('languageOption');
 
         function displaySettingsDiv() {
             settingsDiv.style.display = 'inline';
@@ -71,10 +75,9 @@
         }
 
         function applySettings() {
-            for (let i = 0; i < themeValue.length; i++) {
-                let option = themeValue.options[i];
-                alert(option);
-            }
+            var selectedTheme = themeValue.options[themeValue.selectedIndex].text;
+            var selectedLanguage = languageValue.options[languageValue.selectedIndex].text;
+            alert(selectedTheme + selectedLanguage);
         }
     </script>
 </html>
