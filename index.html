@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Zhadanjun's Portfolio</title>
+        <title id="priTitle">Zhadanjun's Portfolio</title>
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="./styles/headerbar.css">
         <link rel="stylesheet" href="./styles/objectStyle.css">
@@ -37,18 +37,20 @@
             <form class="settingsForm" style="overflow: scroll;">
                 <a class="btnStyle4" id="quitSettingsButton" onclick=exitSettingsDiv()>Back</a>
                 <a class="btnStyle5" id="ApplySettingsButton" onclick=applySettings()>Apply</a>
-                <h3 class="settingsTitle">Settings</h3>
+                <h3 class="settingsTitle" id="settingsTitle">Settings</h3>
 
-                <label class="settingsLabel1">Theme</label>
+                <label class="settingsLabel1" id="settingsLabel1">Theme</label>
                 <select class="settingsSelect1" id="themeOption">
                     <option value="light">Light Mode</option>
                     <option value="dark">Dark Mode</option>
                 </select>
-                <label class="settingsLabel2">Language</label>
+                <label class="settingsLabel2" id="settingsLabel2">Language</label>
                 <select class="settingsSelect2" id="languageOption">
-                    <option value="chinese">中文 (Chinese)</option>
-                    <option value="english">English</option>
-                    <option value="malay">Bahasa Melayu (Malay)</option>
+                    <option value="sich">简体中文</option>
+                    <option value="trch">繁體中文</option>
+                    <option value="sten">English</option>
+                    <option value="lama">Bahasa Melayu (Latin)</option>
+                    <option value="jama">بهاس ملايو (جاوي)</option>
                 </select>
             </form>
 
@@ -60,13 +62,21 @@
 
     <script>
         // Element
-        var settingsDiv = document.getElementById('settingsDiv');
-        var ApplySettingsButton = document.getElementById('ApplySettingsButton');
+        var priTitle = document.getElementById('priTitle');
 
         // Settings
         var themeValue = document.getElementById('themeOption');
         var languageValue = document.getElementById('languageOption');
+        var selectedTheme = themeValue.options[themeValue.selectedIndex].value;
 
+        function changeLanguage() {
+            var selectedLanguage = languageValue.options[languageValue.selectedIndex].value;
+            
+            if (selectedLanguage == "sich") {
+                alert(languageValue);
+            }
+        }
+        
         function displaySettingsDiv() {
             settingsDiv.style.display = 'inline';
         }
@@ -76,9 +86,7 @@
         }
 
         function applySettings() {
-            var selectedTheme = themeValue.options[themeValue.selectedIndex].value;
-            var selectedLanguage = languageValue.options[languageValue.selectedIndex].value;
-            alert(selectedTheme + " " + selectedLanguage);
+            changeLanguage();
         }
     </script>
 </html>
