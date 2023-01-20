@@ -11,7 +11,7 @@
 
     <body>
         <div class="headerbar">
-            <p id="title">Zhadanjun's Portfolio</p>
+            <p id="title">Zhadanjun's Note</p>
         </div>
 
         <div class="headerButton">
@@ -19,6 +19,7 @@
             <a class="btnStyle1" id="vidButton" onclick="alert('In development')">Videos</a>
             <a class="btnStyle1" id="projButton" href="./projects.html">Projects</a>
             <a class="btnStyle1" id="eventButton" href="./event.html">Event</a>
+            <a class="btnStyle1" id="noteButton" href="./note.html">Note</a>
             <a class="btnStyle1" id="aboutButton" href="./about.html">About</a>
             <a class="btnStyle1" id="settingButton" onclick=displaySettingsDiv()>
                 <img src="./images/settings.png" width="10px">
@@ -32,7 +33,7 @@
         </div>
 
         <!-- Settings Panel -->
-        <div class="settingsDiv" id="settingsDiv">
+        <div class="settingsDiv" id="settingsDiv" style="display: none">
             <form class="settingsForm" style="overflow: scroll;">
                 <a class="btnStyle4" id="quitSettingsButton" onclick=exitSettingsDiv()>Back</a>
                 <a class="btnStyle5" id="ApplySettingsButton" onclick=applySettings()>Apply</a>
