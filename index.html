@@ -29,7 +29,7 @@
         <!-- Notification Panel -->
         <div class="indev">
             <h1>New system:</h1>
-            <h2>Unknown</h2>
+            <h2>Note System (For myself XD)</h2>
         </div>
 
         <!-- Settings Panel -->
@@ -61,10 +61,24 @@
     </body>
 
     <script>
-        // Element
+        // Title
         var priTitle = document.getElementById('priTitle');
+        var subTitle = document.getElementById('title');
+        
+        // Button
+        var mainButton = document.getElementById('mainButton');
+        var videoButton = document.getElementById('vidButton');
+        var projectButton = document.getElementById('projButton');
+        var eventButton = document.getElementById('eventButton');
+        var noteButton = document.getElementById('noteButton');
+        var aboutButton = document.getElementById('aboutButton');
 
         // Settings
+        var settingsTitle = document.getElementById('settingsTitle');
+        var quitSettingsButton = document.getElementById('quitSettingsButton');
+        var ApplySettingsButton = document.getElementById('ApplySettingsButton');
+        var settingsLabel1 = document.getElementById('settingsLabel1');
+        var settingsLabel2 = document.getElementById('settingsLabel2');
         var themeValue = document.getElementById('themeOption');
         var languageValue = document.getElementById('languageOption');
         var selectedTheme = themeValue.options[themeValue.selectedIndex].value;
@@ -73,7 +87,90 @@
             var selectedLanguage = languageValue.options[languageValue.selectedIndex].value;
             
             if (selectedLanguage == "sich") {
-                alert(languageValue);
+                // 标题
+                priTitle.innerHTML = "Zhadanjun的开发日志";
+                subTitle.innerHTML = "Zhadanjun的开发日志";
+                mainButton.innerHTML = "主页面";
+                videoButton.innerHTML = "影片";
+                projectButton.innerHTML = "专案";
+                eventButton.innerHTML = "事件";
+                noteButton.innerHTML = "笔记";
+                aboutButton.innerHTML = "关于";
+
+                // 设置
+                settingsTitle.innerHTML = "设置";
+                quitSettingsButton.innerHTML = "退出";
+                ApplySettingsButton.innerHTML = "确定";
+                settingsLabel1.innerHTML = "主题";
+                settingsLabel2.innerHTML = "语言";
+            } else if (selectedLanguage == "trch") {
+                // 標題
+                priTitle.innerHTML = "Zhadanjun的開發日誌";
+                subTitle.innerHTML = "Zhadanjun的開發日誌";
+                mainButton.innerHTML = "主頁面";
+                videoButton.innerHTML = "影片";
+                projectButton.innerHTML = "專案";
+                eventButton.innerHTML = "事件";
+                noteButton.innerHTML = "筆記";
+                aboutButton.innerHTML = "關於";
+
+                // 設置
+                settingsTitle.innerHTML = "設置";
+                quitSettingsButton.innerHTML = "退出";
+                ApplySettingsButton.innerHTML = "確定";
+                settingsLabel1.innerHTML = "主題";
+                settingsLabel2.innerHTML = "語言";
+            } else if (selectedLanguage == "sten") {
+                // Title
+                priTitle.innerHTML = "Zhadanjun's Devlog";
+                subTitle.innerHTML = "Zhadanjun's Devlog";
+                mainButton.innerHTML = "Main";
+                videoButton.innerHTML = "Video";
+                projectButton.innerHTML = "Projects";
+                eventButton.innerHTML = "Event";
+                noteButton.innerHTML = "Note";
+                aboutButton.innerHTML = "About";
+
+                // Settings
+                settingsTitle.innerHTML = "Settings";
+                quitSettingsButton.innerHTML = "Back";
+                ApplySettingsButton.innerHTML = "Apply";
+                settingsLabel1.innerHTML = "Theme";
+                settingsLabel2.innerHTML = "Language";
+            } else if (selectedLanguage == "lama") {
+                // Tema
+                priTitle.innerHTML = "Nota Pembangunan Zhadanjun";
+                subTitle.innerHTML = "Nota Pembangunan Zhadanjun";
+                mainButton.innerHTML = "Utama";
+                videoButton.innerHTML = "Video";
+                projectButton.innerHTML = "Projek";
+                eventButton.innerHTML = "Acara";
+                noteButton.innerHTML = "Nota";
+                aboutButton.innerHTML = "Tentang kami";
+
+                // Seting
+                settingsTitle.innerHTML = "Seting";
+                quitSettingsButton.innerHTML = "Balik";
+                ApplySettingsButton.innerHTML = "Memohon";
+                settingsLabel1.innerHTML = "Tema";
+                settingsLabel2.innerHTML = "Bahasa";
+            } else if (selectedLanguage == "jama") {
+                // تيما
+                priTitle.innerHTML = "نوتا ڤمباڠونن زادانجون";
+                subTitle.innerHTML = "نوتا ڤمباڠونن زادانجون";
+                mainButton.innerHTML = "اوتام";
+                videoButton.innerHTML = "ۏيديو";
+                projectButton.innerHTML = "ڤروجيک";
+                eventButton.innerHTML = "اچارا";
+                noteButton.innerHTML = "نوتا";
+                aboutButton.innerHTML = "تنتڠ کامي";
+
+                // سيتيڠ
+                settingsTitle.innerHTML = "سيتيڠ";
+                quitSettingsButton.innerHTML = "باليق";
+                ApplySettingsButton.innerHTML = "مموهون";
+                settingsLabel1.innerHTML = "تيما";
+                settingsLabel2.innerHTML = "بهاس";
             }
         }
         
