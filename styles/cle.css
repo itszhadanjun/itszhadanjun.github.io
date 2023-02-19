@@ -4,14 +4,10 @@ body {
     font-family: 'IBM Plex Mono', monospace;
 }
 
-.bdos {
+.cle {
     top: 50vh;
     left: 50vw;
     align-items: center;
     position: fixed;
     transform: translate(-50%, -50%);
-}
-
-.bdos .bdostitle {
-    /**/
 }
