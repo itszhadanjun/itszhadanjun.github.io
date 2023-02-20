@@ -8,5 +8,4 @@ echo Pushing All Files
 git push -u origin main
 
 echo Exiting
-CLS
-EXIT
+pause
