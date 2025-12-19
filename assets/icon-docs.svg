@@ -1,0 +1,17 @@
+<svg width="187" height="259" viewBox="0 0 187 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="19.5" y="18.5" width="164" height="237" rx="16.5" fill="white" stroke="black" stroke-width="7"/>
+<rect x="3.5" y="3.5" width="164" height="237" rx="16.5" fill="white" stroke="black" stroke-width="7"/>
+<mask id="path-3-inside-1_2_170" fill="white">
+<path d="M130.132 43.4834H171.42V50.4834H123.132V0H130.132V43.4834Z"/>
+</mask>
+<path d="M130.132 43.4834H123.132V50.4834H130.132V43.4834ZM171.42 43.4834H178.42V36.4834H171.42V43.4834ZM171.42 50.4834V57.4834H178.42V50.4834H171.42ZM123.132 50.4834H116.132V57.4834H123.132V50.4834ZM123.132 0V-7H116.132V0H123.132ZM130.132 0H137.132V-7H130.132V0ZM130.132 43.4834V50.4834H171.42V43.4834V36.4834H130.132V43.4834ZM171.42 43.4834H164.42V50.4834H171.42H178.42V43.4834H171.42ZM171.42 50.4834V43.4834H123.132V50.4834V57.4834H171.42V50.4834ZM123.132 50.4834H130.132V0H123.132H116.132V50.4834H123.132ZM123.132 0V7H130.132V0V-7H123.132V0ZM130.132 0H123.132V43.4834H130.132H137.132V0H130.132Z" fill="black" mask="url(#path-3-inside-1_2_170)"/>
+<line x1="32" y1="25.5" x2="94" y2="25.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="46.5" x2="94" y2="46.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="68.5" x2="139" y2="68.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="92.5" x2="139" y2="92.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="115.5" x2="139" y2="115.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="139.5" x2="139" y2="139.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="163.5" x2="139" y2="163.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="187.5" x2="139" y2="187.5" stroke="black" stroke-width="7"/>
+<line x1="32" y1="210.5" x2="139" y2="210.5" stroke="black" stroke-width="7"/>
+</svg>

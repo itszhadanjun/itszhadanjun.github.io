@@ -1,1 +1,0 @@
-var language = "en"; // en = English, tdch = Traditional Chinese, spch = Simplified Chinese, my = Malay(Malaysia)
